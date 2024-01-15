@@ -16,6 +16,7 @@ container.classList.add("boxes-container");
 
 createBtn.addEventListener("click", () => {
   createBoxes(input.value);
+  input.value = "";
 });
 
 destroyBtn.addEventListener("click", () => {
@@ -33,6 +34,7 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     container.append(box);
   }
+  input.input = "";
 }
 
 function destroyBoxes() {
