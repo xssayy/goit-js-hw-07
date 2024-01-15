@@ -13,7 +13,7 @@ categoriesArray.forEach((category) => {
 categoriesArray.forEach((category) => {
   const categoryListItemArray = category.querySelectorAll(`li`);
   for (const categoryListItem of categoryListItemArray) {
-    categoryListItem.classList.add(`category-list-item`);
+    categoryListItem.classList.add(`item-with-border`);
   }
 });
 
